@@ -49,9 +49,9 @@
     <main id="content" class="main-content" role="main">
         <h2 id="quem-sou-eu">Quem sou eu</h2>
         <ul>          
-          <li>21 anos</li>
+          <li id="idade">23 anos</li>
           <li>Técnico em Eletrotécnica</li>
-          <li>Estudante de Engenharia Elétrica (UTFPR Ponta Grossa)</li>
+          <li>Estudante de Engenharia Elétrica</li>
           <li>SP → PR</li>
         </ul>
 
@@ -66,53 +66,24 @@
         <ul>
           <li>
             <p>Você trabalha com o ScadaBR como freelancer?</p>
-            <p><strong>R.: Sim, para algumas aplicações. <a href="#servicos">Confira mais abaixo.</a></strong></p>
-          </li>
-          <li>
-            <p>Você pretende lançar novas versões da FUScaBR?</p>
-            <p><strong>R.: Atualmente não.</strong> Dado que agora faço faculdade, deixei várias coisas relacionadas a desenvolvimento (inclusive a FUScaBR) em segundo plano.</p>
-          </li>
+            <p><strong style="color: red;">R.: Atualmente não.</strong></p>
+          </li>          
           <li>
             <p>Você é desenvolvedor?</p>
             <p><strong>R.: Não,</strong> não tenho formação acadêmica na área, embora tenha conhecimentos práticos de várias linguagens.</p>
-          </li>
-	  <li>
-            <p>Você possui CNPJ?</p>
-            <p><strong>R.: Infelizmente ainda não.</strong></p>
           </li>
           <li>
             <p>Toddy ou Nescau?</p>
             <p><strong>R.: Nescau,</strong> evidentemente.</p>
           </li>
         </ul>
-        
-        <h2 id="servicos">Serviços</h2>
-        <h4>O que eu faço ✔️</h4>
-        <ul>
-          <li>Ajuda com instalação e configuração do ScadaBR</li>
-          <li>Criação de <i>design</i> de Telas Gráficas</li>
-          <li>Suporte na criação de Scripts no ScadaBR</li>
-          <li>Integrações ScadaBR & Telegram</li>
-          <li>Auxílio na configuração de dispositivos (CLPs, Esp8266, Arduino, etc)*</li>
-          <li>Criação de telas personalizadas e integração com banco de dados de outros sistemas</li>
-		</ul>
-		
-		<p style="font-size: 0.95rem;"><strong>*No caso de CLPs, este serviço pode ser impossibilitado pela necessidade de acesso presencial ao dispositivo.</strong></p>
-		<p><i>Para verificar disponibilidade e combinar valores, <a href="#contato">entre em contato</a>.</i></p>
-		
-		<h4>O que eu não faço ❌</h4>
-        <ul>
-          <li>Implantação do ScadaBR presencialmente (exceção: Ponta Grossa/Paraná, necessário combinar)</li>
-          <li>Treinamentos de equipes</li>
-          <li>Configuração do ScadaBR em nuvens (Amazon AWS, Google Cloud, Microsoft Azure, etc)</li>
-		</ul>
-
-        <h2 id="contato">Contato</h2>
-        <p><strong>E-mail:</strong> <code class="language-plaintext highlighter-rouge"><span>c&#101;lso.</span>ubaldo@outlook.com</code></p>
-
-        <p><strong>Telegram:</strong> <a href="https://t.me/celso_ubaldo" target="_blank">@celso_ubaldo</a></p>
-		
-		<iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeObV3xHfQS6Y-HTY1K0mrGzp7GpJa5W8uktjNVfbScb2cJuA/viewform?embedded=true" style="background-color: #c6f2ee; width: 100%; border-radius: 12px;" height="700"  frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
-    </main>
+      </main>
+     <script>
+	const d = new Date();
+	let pos_aniversario = d.getDate() >= 14 && d.getMonth() >= 6;
+	let ano = d.getFullYear();
+	let idade = pos_aniversario ? (ano - 2001) : (ano - 2002);
+	document.getElementById("idade").innerText = `${idade} anos`;
+     </script>
   </body>
 </html>
