@@ -29,3 +29,14 @@
 .link-panel p { font-size: 10pt; }
 
 .tjust { text-align: justify; }
+
+.tgradient {
+    background-color: #077f88;
+    background-image: linear-gradient(270deg, #07886c, #0b69a0);
+    background-size: 100%;
+	background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent;
+}
